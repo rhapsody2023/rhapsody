@@ -1,0 +1,106 @@
+@import url('http://fonts.cdnfonts.com/css/sf-hollywood-hills-3');
+
+.headline {
+	/* padding: 120px 0; */
+	background: url(../img/landing.jpg) repeat;/* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
+	background-position: top;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+  	align-items: center; 
+	/* width: 100%; */
+	text-align: center;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /*Resize the background image to cover the entire container*/
+	
+}
+
+.headline > .container > h1 {
+	font-size: 130px;
+	color: rgb(255, 255, 255);
+	font-family: 'SF Hollywood Hills', sans-serif;
+}
+
+.featurette-divider {
+	margin: 80px 100px;
+}
+
+.featurette {
+	overflow: hidden; 
+}
+
+.featurette-image.pull-left {
+	margin-right: 40px;
+}
+.featurette-image.pull-right {
+	margin-left: 40px;
+}
+
+.featurette-heading {
+	font-size: 50px;
+}
+
+footer {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.footer-icon {
+	padding: 10px;
+	font-size: 50px;
+}
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1200px) {
+
+.headline > .container > h1 {font-size: 140px;}
+.headline > .container > h2 {font-size: 63px;}
+.featurette-divider {margin: 50px 0;}
+.featurette-image.pull-left {margin-right: 20px;}
+.featurette-image.pull-right {margin-left: 20px;}
+.featurette-heading {font-size: 35px;}
+
+}
+
+@media (max-width: 991px) {
+
+.headline > .container > h1 {font-size: 125px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-image {max-width: 50%;}
+.featurette-image.pull-left {margin-right: 10px;}
+.featurette-image.pull-right {margin-left: 10px;}
+.featurette-heading {font-size: 30px;}
+
+}
+
+@media (max-width: 768px) {
+	
+.container {margin: 0 15px;}
+.featurette-divider {margin: 40px 0;}
+.featurette-heading {font-size: 25px;}
+
+}
+
+
+@media (max-width: 668px) {
+
+.headline > .container > h1 {font-size: 100px;}
+.featurette-divider {margin: 30px 0;}
+
+}
+
+@media (max-width: 640px) {
+
+.headline > .container > h1 {font-size: 90px;}
+}
+
+@media (max-width: 375px) {
+
+.headline > .container > h1 {font-size: 70px;}
+.featurette-image {max-width: 100%;}
+.featurette-image.pull-left {margin-right: 0; margin-bottom: 10px;}
+.featurette-image.pull-right {margin-left: 0; margin-bottom: 10px;}
+
+}
